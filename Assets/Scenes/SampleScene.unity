@@ -150,6 +150,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dbab07a9cdff8940b33c700c5ade21e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  players:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  tileCollection:
+  - {fileID: 0}
+  - {fileID: 0}
+  tileObjectPrefab: {fileID: 3796111876848882658, guid: 389049acd0977b148bdecdfde951f9c0,
+    type: 3}
 --- !u!4 &584621620
 Transform:
   m_ObjectHideFlags: 0
@@ -238,7 +248,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 6.998e-42, z: 0, w: -0.0028611198}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public TileTemplate[] tileCollection = new TileTemplate[2];
     //public Tile[] tileWall = new Tile[144];
     public Stack<Tile> tileWall;
+    public Tile tileObjectPrefab;
 
     //private int handSize;
     //private int maxCopies; // this will be 4 (the number of copies allowed of most tiles)
@@ -25,6 +26,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void CreateTileObject(TileTemplate template)
+    {
+
     }
 
     public void FillTileWall()

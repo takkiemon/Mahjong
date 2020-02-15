@@ -7,6 +7,5 @@ public class TileTemplate : ScriptableObject
 {
     public int suit;
     public int number;
-    public Sprite tileSprite;
-
+    public Material tileSprite;
 }
