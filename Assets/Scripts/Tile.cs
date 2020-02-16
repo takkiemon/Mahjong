@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    public TileTemplate tileClass;
+    public TileTemplate tileTemplate;
     public GameObject tileFace;
 
     public int suit;
     public int number;
+    public int maxCopies; // the number of copies in the collection (there should be four copies of '3 dots', but only one copy of the 'chinese 3 flower'
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +23,10 @@ public class Tile : MonoBehaviour
 
     }
 
-    public void SetValues(int suit, int number)
+    public void SetValues(TileTemplate template)
     {
-        tileFace.GetComponent<MeshRenderer>().material = tileClass.tileSprite;
-        this.suit = suit;
-        this.number = number;
+        tileFace.GetComponent<MeshRenderer>().material = tileTemplate.tileSprite;
+        template.suit = suit;
+        template.number = number;
     }
 }

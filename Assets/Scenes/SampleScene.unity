@@ -156,8 +156,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   tileCollection:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 8cf351b93eba9c6408c7522d6c31656a, type: 2}
+  - {fileID: 11400000, guid: a3e3c18f133219543928f35d60d58fab, type: 2}
   tileObjectPrefab: {fileID: 3796111876848882658, guid: 389049acd0977b148bdecdfde951f9c0,
     type: 3}
 --- !u!4 &584621620

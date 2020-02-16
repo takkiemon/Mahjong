@@ -28,20 +28,20 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void CreateTileObject(TileTemplate template)
+    public Tile CreateTileObject(TileTemplate template)
     {
-
+        var tileObject = Instantiate(tileObjectPrefab, gameObject.transform);
+        tileObject.SetValues(template);
+        return tileObject;
     }
 
     public void FillTileWall()
     {
-        /*
-        foreach (Tile currentTile in tileWall)
+        for (int i = 0; i < tileCollection.Length; i++)
         {
-            randomInt = Random.Range(0, 2);
-            currentTile.tileTemplate = tileCollection[randomInt];
+            randomInt = Random.Range(0, tileCollection.Length);
+            tileWall.Push(CreateTileObject(tileCollection[randomInt]));
         }
-        */
     }
 
     public void DealTheHands()
